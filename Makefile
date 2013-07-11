@@ -26,7 +26,7 @@ OBJS		= $(addprefix $(OBJ_DIR)/, \
 			dfg_library.o \
 			hardware_library.o)
 
-PROG_NAME	= libcommonParser.so
+PROG_NAME	= libcommonInterfaces.so
 
 ###############################################################################
 #      compilation, linking and debugging targets
