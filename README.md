@@ -1,7 +1,11 @@
 CommonParser
 ========
 
-A file IO library
+A file IO library.
+
+    This makefile automatically builds the shared library, then places it in $HOME/lib
+    It also places common_interfaces.h, architecture_library.h, dfg_library.h and
+        hardware_library.h inside $HOME/include
 
 BUILDING 
 - Dependancies: libconfuse (installed either as the superuser or in $HOME)
