@@ -1,0 +1,15 @@
+PURPOSE:
+========
+A library for reading the various GA and Scheduler files.
+To be used for
+	architecture libraries
+	DFG files
+	prr files
+
+
+CONTENTS:
+=========
+
+examples	= examples of the format that this parser follows
+nbproject	= A configuration folder for Netbeans Projects (my IDE)
+obj		= where the object files are stored to create the library
