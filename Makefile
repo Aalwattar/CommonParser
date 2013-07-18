@@ -12,10 +12,10 @@
 #compiler options
 CC		= gcc
 C_FLAGS 	= -fPIC -O3 -MMD -MP 
-C_INCLUDES   	= -I${HOME}/include
+C_INCLUDES   	= -I../../include
 
 L_FLAGS		= -shared 
-L_INCLUDES	= -L${HOME}/lib -lconfuse
+L_INCLUDES	= -L../../lib -lconfuse
 
 
 #directory names
@@ -45,9 +45,9 @@ clean :
 
 $(PROG_NAME) : $(OBJS)
 	$(CC) $(L_FLAGS) $(OBJS) -o $(PROG_NAME) $(L_INCLUDES) 
-	cp $(PROG_NAME) ${HOME}/lib/
+	cp $(PROG_NAME) ../../lib/
 	cp common_interfaces.h architecture_library.h dfg_library.h \
-	    hardware_library.h ${HOME}/include/
+	    hardware_library.h ../../include/
 	
 $(OBJ_DIR)/%.o: %.c $(OBJ_DIR) 
 	$(CC) $(C_INCLUDES) $(C_FLAGS) -c $< -o $@
