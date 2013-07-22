@@ -17,16 +17,13 @@ BUILDING
 USAGE
 =====
 
-- to use the common data structures, include common_interfaces.c
-- to institute file parsing, include the appropriately named .h file:
-    architecture_library.h
-    dfg_library.h
-    hardware_library.h
+- to use the common data structures and functions, include common_interfaces.h,
+    then add -lcommonInterfaces to your linker
 
 
 CONTENTS:
 =========
 
-examples	= examples of the format that this parser follows
+templates	= examples of the format that this parser follows
 nbproject	= A configuration folder for Netbeans Projects (my IDE)
 obj		= where the object files are stored to create the library

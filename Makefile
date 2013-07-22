@@ -45,9 +45,8 @@ clean :
 
 $(PROG_NAME) : $(OBJS)
 	$(CC) $(L_FLAGS) $(OBJS) -o $(PROG_NAME) $(L_INCLUDES) 
+	cp common_interfaces.h  ../../include/
 	cp $(PROG_NAME) ../../lib/
-	cp common_interfaces.h architecture_library.h dfg_library.h \
-	    hardware_library.h ../../include/
 	
 $(OBJ_DIR)/%.o: %.c $(OBJ_DIR) 
 	$(CC) $(C_INCLUDES) $(C_FLAGS) -c $< -o $@
