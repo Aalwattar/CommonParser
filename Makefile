@@ -12,7 +12,7 @@
 #compiler options
 CC		= gcc
 C_FLAGS 	= -fPIC -O3 -MMD -MP 
-C_INCLUDES   	= -I../../include
+C_INCLUDES   	= =I. -I../../include
 
 L_FLAGS		= -shared 
 L_INCLUDES	= -L../../lib -lconfuse
