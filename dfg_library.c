@@ -15,7 +15,7 @@
 // FIX - Needs a function header comment
 cfg_t * parse_conf_dfg(char *filename){
     cfg_opt_t task_opts[] = {
-        CFG_STR("type", 0, CFGF_NODEFAULT ),
+        CFG_INT("type", 0, CFGF_NODEFAULT ),
         CFG_STR("output",0 , CFGF_NODEFAULT),
         CFG_STR_LIST("inputs", 0, CFGF_NODEFAULT),
         CFG_END()
