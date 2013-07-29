@@ -104,7 +104,7 @@ int initDFG(char * filename, DFG * task_schedule){
         node = cfg_getnsec(cfgDFG, "task", j);
         
         strncpy(task_schedule->node[j].name, cfg_title(node), DEFAULT_BUFF_SIZE);
-        strncpy(task_schedule->node[j].task_type, cfg_getstr(node, "type"), DEFAULT_BUFF_SIZE);
+        task_schedule->node[j].task_type = cfg_getint(node, "type");
         strncpy(task_schedule->node[j].output, cfg_getstr(node, "output"), DEFAULT_BUFF_SIZE);
         
         // read in all the inputs
@@ -180,6 +180,6 @@ void printDFG(DFG * task_schedule){
         fprintf(stdout, "}\n");
         
         fprintf(stdout, "\tOutput = %s\n", task_schedule->node[i].output);
-        fprintf(stdout, "\tType = %s\n\n", task_schedule->node[i].task_type);
+        fprintf(stdout, "\tType = %d\n\n", task_schedule->node[i].task_type);
     }
 }
