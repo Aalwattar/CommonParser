@@ -6,7 +6,7 @@
 #include <string.h>
 
 #include "confuse.h"
-#include "hardware_library.h"
+#include "common_interfaces.h"
 
 /******************************************************************************
  *****************              HARDWARE FILE I/O             *****************

@@ -6,7 +6,7 @@
 #include <string.h>
 
 #include "confuse.h"
-#include "dfg_library.h"
+#include "common_interfaces.h"
 
 /******************************************************************************
  *****************                DFG FILE I/O                *****************

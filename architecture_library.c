@@ -6,7 +6,7 @@
 #include <string.h>
 
 #include "confuse.h"
-#include "architecture_library.h"
+#include "common_interfaces.h"
 
 /******************************************************************************
  *****************            ARCHITECTURE FILE I/O           *****************
